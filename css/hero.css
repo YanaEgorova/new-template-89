@@ -1,0 +1,25 @@
+.hero__wrapper { 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.hero__wrapper .container { 
+    flex-grow: 1;
+    width: 100%;
+}
+.hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-block {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1440px) {
+ 
+  
+}
