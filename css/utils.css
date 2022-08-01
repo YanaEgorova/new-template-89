@@ -82,7 +82,7 @@ input[type=number] {
 .box-third,
 .box-fourth {
   position: fixed;
-  background-color: #000;
+  background-color: var(--second-brand-color);
   z-index: 99999999999999999;
 }
 .box-first {
