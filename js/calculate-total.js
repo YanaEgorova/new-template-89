@@ -52,8 +52,6 @@ function cartAdd(e) {
         })
         okay = false;
     }
-
- 
     // ADD TO LOCAL STORAGE
     if (okay){
         if(localStorage(id, amount.textContent) != false) {

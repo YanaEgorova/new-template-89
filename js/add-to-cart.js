@@ -7,7 +7,6 @@ export const successMessage = document.querySelector('.js_success-message');
 const errorButton = document.querySelector('.js_error__btn');
 const errorOverlay = document.querySelector('.js_error__overlay');
 
-console.log('successMessage', successMessage);
 
 allBtns = [...allBtns];
 
@@ -53,16 +52,15 @@ function addToCart(e) {
        }
     })
 
-    // ADD TO LOCAL STORAGE
-    if (okay){
-        if(localStorage(productId) != false) {
-            if(cartSpan) {
-                cartSpan.textContent = Number(cartSpan.textContent) + 1;
-            }
+   // ADD TO LOCAL STORAGE
+   if (okay){
+    if(localStorage(productId) != false) {
+        if(cartSpan) {
+            cartSpan.textContent = Number(cartSpan.textContent) + 1;
         }
-        showSuccessMessage(successMessage, successMessageSpan, name);
     }
-    
+    showSuccessMessage(successMessage, successMessageSpan, name);
+}
 
 }
 
